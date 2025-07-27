@@ -28,11 +28,31 @@
       color: white;
       font-size: 1.1rem;
       cursor: pointer;
-      margin-top: 20px;
+      margin: 10px;
     }
-    a {
-      color: #f8367c;
-      text-decoration: none;
+    .btn:hover {
+      background: #e32f6a;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    .tokenomics {
+      text-align: left;
+      max-width: 500px;
+      margin: 0 auto;
+      background: #2e2e2e;
+      padding: 20px;
+      border-radius: 12px;
+      line-height: 1.8;
+    }
+    code {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   </style>
 </head>
@@ -42,11 +62,29 @@
   <p>The most chaotic meme coin on Binance Smart Chain 🧠💥</p>
   <p>🔥 1 Billion Supply — No Chill — 100% Meme Power</p>
 
-  <button class="btn" onclick="window.open('https://t.me/+bp-TSYwRVhoyNzRh', '_blank')">Join the Telegram</button>
+  <div class="links">
+    <button class="btn" onclick="window.open('https://t.me/+bp-TSYwRVhoyNzRh', '_blank')">Join Telegram</button>
+    <button class="btn" onclick="window.open('https://dexscreener.com/bsc/0x0cc645edbeee3b4a35f6b926299bf5e1904db6f1', '_blank')">View on Dexscreener</button>
+    <button class="btn" onclick="window.open('https://bscscan.com/token/0x4BB8Ab1dE388CE019aA992b517bdE9e8a16e1c5B', '_blank')">View on BscScan</button>
+  </div>
 
-  <p style="margin-top: 40px;">
-    Built for full-send degenerates. <br />
-    Contract Address: <code>0xYOUR_CONTRACT_ADDRESS</code>
-  </p>
+  <div class="section tokenomics">
+    <h2>🚀 Tokenomics</h2>
+    <ul>
+      <li><strong>Total Supply:</strong> 1,000,000,000 $LOKO</li>
+      <li><strong>Buy/Sell Tax:</strong> 3% (1% Burn, 1% Liquidity, 1% Marketing)</li>
+      <li><strong>Max Wallet:</strong> 2%</li>
+      <li><strong>Max TX:</strong> 1%</li>
+      <li><strong>Liquidity:</strong> Locked 🔒</li>
+      <li><strong>Ownership:</strong> Renounced ✅</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <p>
+      Contract Address: <br />
+      <code>0x4BB8Ab1dE388CE019aA992b517bdE9e8a16e1c5B</code>
+    </p>
+  </div>
 </body>
 </html>
